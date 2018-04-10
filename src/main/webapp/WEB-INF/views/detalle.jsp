@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Java Demo</title>
+<title>Detalle de Pelicula</title>
 </head>
 <body>
-	<h2>Hola Java Web!</h2>	
+	<h1>Titulo de la Pelicula: ${titulo}</h1>
+	<h2>Duración de la película: ${duracion} min.</h2>
+	<h2>Precio: $ ${precio}</h2>
 </body>
-</html>	
+</html>
