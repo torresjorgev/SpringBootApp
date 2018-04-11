@@ -14,5 +14,28 @@
 			<li>${ pelicula }</li>
 		</c:forEach>
 	</ol>
+	Tabla de Películas
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Título</th>
+				<th>Duración</th>
+				<th>Clasificación</th>
+				<th>Género</th>
+			</tr>
+		</thead>
+		<tbody>
+			<c:forEach items="${ peliculas }" var="pelicula">
+				<tr>
+					<td>${pelicula.id}</td>
+					<td>${pelicula.titulo}</td>
+					<td>${pelicula.duracion} min.</td>
+					<td>${pelicula.clasification}</td>
+					<td>${pelicula.genero}</td>
+				</tr>
+			</c:forEach>
+		</tbody>
+	</table>
 </body>
 </html>

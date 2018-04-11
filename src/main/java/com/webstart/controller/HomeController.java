@@ -22,7 +22,7 @@ public class HomeController {
 	
 	@RequestMapping(value="/")
 	public String mostrarPrincipal(Model model) {
-		List<Pelicula> pelicula = new LinkedList<>();
+		List<Pelicula> pelicula = getLista();
 //		pelicula.add("Fast N Furious");
 //		pelicula.add("El Aro 2");
 //		pelicula.add("Aliens");
@@ -51,8 +51,20 @@ public class HomeController {
 	
 	private List<Pelicula> getLista(){
 		SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
+		List<Pelicula> lista;
 		try {
-			List lista = new LinkedList<>();
+			lista = new LinkedList<>();
+			
+			Pelicula pelicula1 = new Pelicula();
+			pelicula1.setId(10);
+			pelicula1.setTitulo("Power Rangers");
+			pelicula1.setDuracion(120);
+			pelicula1.setClasification("B");
+			pelicula1.setGenero("Aventura");
+			pelicula1.setFechaEstreno(formatter.parse("05-02-2017"));
+			
+			lista.add(pelicula1);
+			
 			return lista;
 		}catch(ParseException e) {
 			return null;
