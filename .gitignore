@@ -1,4 +1,4 @@
-target/
+/target/
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
@@ -11,15 +11,15 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
-# .idea
-# *.iws
-# *.iml
-# *.ipr
+.idea
+*.iws
+*.iml
+*.ipr
 
 ### NetBeans ###
-nbproject/private/
-build/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
